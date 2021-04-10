@@ -1,15 +1,12 @@
 def solution(s):
     salute = 0
-    my_dict = {}
+    goingLeft = []
+    goingRight = []
     for index,i in enumerate(s):
-        if i == '<' or i == '>':
-            if not my_dict.get(i):
-                my_dict[i] = [index]
-            else:
-                my_dict[i].extend([index])
-    goingRight = my_dict.get('>')
-    goingLeft = my_dict.get('<')
-    j = 0
+        if i == '<':
+            goingLeft.append(index)
+        elif i == '>':
+            goingRight.append(index)
     for i in goingRight:
         for j in goingLeft:
             if(i < j):
