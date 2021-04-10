@@ -9,6 +9,7 @@ Write a function called answer(data, n) that takes in a list of less than 100 in
 ### Test Cases
 
 Inputs:
+
 data = `[1, 2, 3]` and n = `0` 
 
 Output: 
